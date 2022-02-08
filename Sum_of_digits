@@ -1,0 +1,16 @@
+let digits_sum=(num)=>
+{
+    let sum=0;
+    let count=0;
+    while(num!==0)
+    {
+        let a=num%10;
+        count++;
+        sum+=a;
+        num=parseInt(num/10);
+    }
+    console.log(`No. of digits= ${count} and their sum= ${sum}`);
+}
+digits_sum(456);
+digits_sum(1234);
+digits_sum(67892);
